@@ -1,0 +1,4 @@
+Run Command:
+npx cypress run --browser chrome --reporter mochawesome
+
+Page Object Model Framework : Cypress, Javascript, Mochawesome

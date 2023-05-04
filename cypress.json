@@ -1,0 +1,11 @@
+{
+    "watchForFileChanges": false,
+    "video": true,
+    "reporter": "mochawesome",
+  
+    "reporterOptions": {
+      "reportDir": "cypress/reports",
+      "overwrite": false,
+      "mochaFile": "cypress/results/results-[hash].json"
+    }
+  }
