@@ -15,5 +15,15 @@ pipeline {
         sh 'npx cypress run'
       }
     }
+    stage {
+        publishHTML([
+        allowMissing: false,
+        alwaysLinkToLastBuild: false,
+        keepAll: true,
+        reportDir: 'cypress/cypress/reports/html',
+        reportFiles: 'index.html',
+        reportName: 'HTML Report', 
+        reportTitles: ''])
+    }
   }
 }
