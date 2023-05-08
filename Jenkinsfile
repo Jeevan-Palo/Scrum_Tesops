@@ -13,7 +13,7 @@ pipeline {
         // sh "npm run test:ci:record"
         sh 'npm install'
         sh 'npx cypress install --force'
-        sh 'npx cypress run'
+        sh 'npm cypress run'
       }
     }
     stage('Report'){
