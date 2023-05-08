@@ -12,8 +12,7 @@ pipeline {
         // sh 'npm ci'
         // sh "npm run test:ci:record"
         sh 'npm install'
-        sh 'npm install --save-dev cypress'
-        sh '.\node_modules\.bin\cypress.cmd install'
+        sh 'npx cypress install --force'
         sh 'npx cypress run'
       }
     }
